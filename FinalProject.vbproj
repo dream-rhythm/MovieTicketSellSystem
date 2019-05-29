@@ -130,5 +130,17 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\mov01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\mov02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\mov03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\mov04.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
