@@ -9,18 +9,20 @@ Public Class MainGUI
             setBtnEnable(False)
         Else
             lbl_login.Text = Module1.getUser() & "(登出)"
+            PictureBox1.Image = Module1.getUserPicture()
             setBtnEnable(True)
         End If
     End Sub
 
-    Private Sub onLoad(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub OnLoad(sender As Object, e As EventArgs) Handles MyBase.Load
+
         btnArr = {}
         Dim a As New GraphicsPath()
         a.AddEllipse(0, 0, 45, 45)
         PictureBox1.Region = New Region(a)
         PictureBox1.Height = 45
         PictureBox1.Width = 45
-        PictureBox1.Image = Module1.getUserPicture()
+        PictureBox1.Image = Image.FromFile("../../Image/NotLogin.png")
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.Refresh()
         setBtnEnable(False)

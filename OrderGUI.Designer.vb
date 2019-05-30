@@ -33,7 +33,7 @@ Partial Class OrderGUI
         Me.Label2 = New System.Windows.Forms.Label()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_next = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.rdb_MagicCard = New System.Windows.Forms.RadioButton()
         Me.rdb_cash = New System.Windows.Forms.RadioButton()
@@ -179,14 +179,14 @@ Partial Class OrderGUI
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "    全票(230)："
         '
-        'Button1
+        'btn_next
         '
-        Me.Button1.Location = New System.Drawing.Point(717, 397)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 38)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "下一步"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_next.Location = New System.Drawing.Point(717, 397)
+        Me.btn_next.Name = "btn_next"
+        Me.btn_next.Size = New System.Drawing.Size(93, 38)
+        Me.btn_next.TabIndex = 0
+        Me.btn_next.Text = "下一步"
+        Me.btn_next.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -450,7 +450,7 @@ Partial Class OrderGUI
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GB_cash)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btn_next)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "OrderGUI"
         Me.Text = "訂購"
@@ -481,7 +481,7 @@ Partial Class OrderGUI
     Friend WithEvents Label2 As Label
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_next As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents rdb_MagicCard As RadioButton
     Friend WithEvents rdb_cash As RadioButton

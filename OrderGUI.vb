@@ -16,7 +16,7 @@
         End If
         lbl_time.Text = movieData(1)
         lbl_place.Text = movieData(2)
-
+        countMoney()
     End Sub
 
     Private Sub Ticket_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged, NumericUpDown2.ValueChanged, NumericUpDown3.ValueChanged, NumericUpDown4.ValueChanged
@@ -29,13 +29,35 @@
     End Sub
 
     Private Sub countMoney()
-        Dim pay As Integer = inp_paycash.Text
+        Dim needToPay As Integer = lbl_total.Text
+        Dim payCash As Integer = inp_paycash.Text
+
+        If rdb_cash.Checked Then
+            If payCash > needToPay Then
+                btn_next.Enabled = True
+            Else
+                btn_next.Enabled = False
+            End If
+        Else
+            btn_next.Enabled = True
+        End If
+
+        If payCash > needToPay Then
+            payCash -= needToPay
+            setCash(lbl_500, payCash, 500)
+            setCash(lbl_100, payCash, 100)
+            setCash(lbl_50, payCash, 50)
+            setCash(lbl_10, payCash, 10)
+            setCash(lbl_5, payCash, 5)
+            setCash(lbl_1, payCash, 1)
+        End If
 
     End Sub
 
     Private Sub rdb_payment_CheckedChanged(sender As Object, e As EventArgs) Handles rdb_cash.CheckedChanged, rdb_MagicCard.CheckedChanged
         Dim rdb As RadioButton = sender
         GB_cash.Enabled = rdb_cash.Checked
+        countMoney()
     End Sub
 
     Private Sub inp_checkNumberic(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles inp_paycash.KeyPress
@@ -46,10 +68,11 @@
     End Sub
 
     Private Sub inp_paycash_TextChanged(sender As Object, e As EventArgs) Handles inp_paycash.TextChanged
-        Dim needToPay As Integer = lbl_total.Text
-        Dim payCash As Integer = inp_paycash.Text
-        If payCash > needToPay Then
+        countMoney()
+    End Sub
 
-        End If
+    Private Sub setCash(ByRef lbl As Label, ByRef left As Integer, ByVal money As Integer)
+        lbl.Text = left \ money
+        left = left Mod money
     End Sub
 End Class
