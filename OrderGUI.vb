@@ -4,18 +4,9 @@
     End Sub
 
     Private Sub onShow(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
-        Dim movieData() As String = Module1.getMovieData()
-        If movieData(0) = "mov01" Then
-            lbl_name.Text = "復活的魯路修"
-        ElseIf movieData(0) = "mov02" Then
-            lbl_name.Text = "哥吉拉 II 怪獸之王"
-        ElseIf movieData(0) = "mov03" Then
-            lbl_name.Text = "狗狗的旅程"
-        Else
-            lbl_name.Text = "五月天 人生無限公司"
-        End If
-        lbl_time.Text = movieData(1)
-        lbl_place.Text = movieData(2)
+        lbl_name.Text = UserData.getMovieData(MovieDataName.MovieName)
+        lbl_time.Text = UserData.getMovieData(MovieDataName.MovieTime)
+        lbl_place.Text = UserData.getMovieData(MovieDataName.MoviePlace)
         countMoney()
     End Sub
 
@@ -26,6 +17,7 @@
         total += NumericUpDown3.Value * 150
         total += NumericUpDown4.Value * 150
         lbl_total.Text = total
+        countMoney()
     End Sub
 
     Private Sub countMoney()
@@ -50,6 +42,10 @@
             setCash(lbl_10, payCash, 10)
             setCash(lbl_5, payCash, 5)
             setCash(lbl_1, payCash, 1)
+        End If
+
+        If lbl_total.Text = 0 Then
+            btn_next.Enabled = False
         End If
 
     End Sub
@@ -79,5 +75,18 @@
     Private Sub setCash(ByRef lbl As Label, ByRef left As Integer, ByVal money As Integer)
         lbl.Text = left \ money
         left = left Mod money
+    End Sub
+
+    Private Sub btn_next_Click(sender As Object, e As EventArgs) Handles btn_next.Click
+        Dim normal As Integer = NumericUpDown1.Value
+        Dim student As Integer = NumericUpDown2.Value
+        Dim children As Integer = NumericUpDown3.Value
+        Dim older As Integer = NumericUpDown4.Value
+        UserData.setTicketData(normal, student, children, older)
+        GUITool.switchGUI(GUINAME.ChooseSeatGUI)
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
+        GUITool.switchGUI(GUINAME.MainGUI)
     End Sub
 End Class

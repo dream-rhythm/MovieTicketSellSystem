@@ -73,6 +73,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChooseSeatGUI.Designer.vb">
+      <DependentUpon>ChooseSeatGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseSeatGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUITool.vb" />
     <Compile Include="SignupGUI.Designer.vb">
       <DependentUpon>SignupGUI.vb</DependentUpon>
     </Compile>
@@ -98,7 +105,7 @@
       <DependentUpon>MainGUI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module1.vb" />
+    <Compile Include="UserData.vb" />
     <Compile Include="DBTool.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -117,6 +124,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ChooseSeatGUI.resx">
+      <DependentUpon>ChooseSeatGUI.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignupGUI.resx">
       <DependentUpon>SignupGUI.vb</DependentUpon>
     </EmbeddedResource>

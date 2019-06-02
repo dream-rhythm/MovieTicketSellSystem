@@ -4,12 +4,12 @@ Public Class MainGUI
     Dim btnArr() As Button = {}
 
     Private Sub onShow(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
-        If Module1.getUser() = "" Then
+        If UserData.getUser() = "" Then
             lbl_login.Text = "登入/註冊"
             setBtnEnable(False)
         Else
-            lbl_login.Text = Module1.getUser() & "(登出)"
-            PictureBox1.Image = Module1.getUserPicture()
+            lbl_login.Text = UserData.getUser() & "(登出)"
+            PictureBox1.Image = UserData.getUserPicture()
             setBtnEnable(True)
         End If
     End Sub
@@ -59,17 +59,17 @@ Public Class MainGUI
         Dim btn As Button = sender
         Dim movName As String = btn.Tag.Split(",")(0)
         Dim movPlace As String = btn.Tag.Split(",")(1)
-        Module1.setMovieData(movName, btn.Text, movPlace)
-        Module1.switchGUI(Module1.GUINAME.OrderGUI)
+        UserData.setMovieData(movName, btn.Text, movPlace)
+        GUITool.switchGUI(GUITool.GUINAME.OrderGUI)
     End Sub
 
     Private Sub lbl_login_Click(sender As Object, e As EventArgs) Handles lbl_login.Click
         If lbl_login.Text = "登入/註冊" Then
-            Module1.switchGUI(GUINAME.LoginGUI)
+            GUITool.switchGUI(GUINAME.LoginGUI)
             Me.Hide()
         Else
             lbl_login.Text = "登入/註冊"
-            Module1.logout()
+            UserData.logout()
             setBtnEnable(False)
             PictureBox1.Image = Image.FromFile("../../Image/NotLogin.png")
         End If

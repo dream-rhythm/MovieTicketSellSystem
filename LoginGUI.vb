@@ -13,14 +13,14 @@ Public Class LoginGUI
         Dim drr As OleDbDataReader
         drr = objCmd.ExecuteReader
         Do While drr.Read()
-            Module1.setuser(drr.Item("username"), drr.Item("sex"))
+            UserData.setuser(drr.Item("username"), drr.Item("sex"))
             success = True
         Loop
 
         If success Then
             Me.Hide()
             Label3.Visible = False
-            Module1.switchGUI(Module1.GUINAME.MainGUI)
+            GUITool.switchGUI(GUITool.GUINAME.MainGUI)
         Else
             Label3.Visible = True
         End If
@@ -31,10 +31,10 @@ Public Class LoginGUI
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Module1.switchGUI(GUINAME.SignupGUI)
+        GUITool.switchGUI(GUINAME.SignupGUI)
     End Sub
 
     Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
-        Module1.switchGUI(GUINAME.MainGUI)
+        GUITool.switchGUI(GUINAME.MainGUI)
     End Sub
 End Class

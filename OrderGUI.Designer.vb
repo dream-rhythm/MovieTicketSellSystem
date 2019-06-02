@@ -59,6 +59,7 @@ Partial Class OrderGUI
         Me.Label14 = New System.Windows.Forms.Label()
         Me.lbl_time = New System.Windows.Forms.Label()
         Me.lbl_name = New System.Windows.Forms.Label()
+        Me.btn_cancel = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -181,6 +182,7 @@ Partial Class OrderGUI
         '
         'btn_next
         '
+        Me.btn_next.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.btn_next.Location = New System.Drawing.Point(717, 397)
         Me.btn_next.Name = "btn_next"
         Me.btn_next.Size = New System.Drawing.Size(93, 38)
@@ -442,11 +444,22 @@ Partial Class OrderGUI
         Me.lbl_name.TabIndex = 0
         Me.lbl_name.Text = "今晚打老虎"
         '
+        'btn_cancel
+        '
+        Me.btn_cancel.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_cancel.Location = New System.Drawing.Point(716, 353)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.Size = New System.Drawing.Size(93, 38)
+        Me.btn_cancel.TabIndex = 4
+        Me.btn_cancel.Text = "取消"
+        Me.btn_cancel.UseVisualStyleBackColor = True
+        '
         'OrderGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(821, 460)
+        Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GB_cash)
         Me.Controls.Add(Me.GroupBox2)
@@ -507,4 +520,5 @@ Partial Class OrderGUI
     Friend WithEvents lbl_place As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
+    Friend WithEvents btn_cancel As Button
 End Class

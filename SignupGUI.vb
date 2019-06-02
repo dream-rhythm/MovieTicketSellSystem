@@ -19,7 +19,7 @@ Public Class SignupGUI
             If inp_pwd.Text = inp_pwd2.Text And inp_pwd.Text.Length > 5 And inp_acc.Text.Length <> 0 And inp_name.Text.Length <> 0 Then
                 writeToDB(DB)
                 MsgBox("註冊成功，請重新登入")
-                Module1.switchGUI(GUINAME.LoginGUI)
+                GUITool.switchGUI(GUINAME.LoginGUI)
             ElseIf inp_acc.Text.Length = 0 Or inp_name.Text.Length = 0 Or inp_pwd.Text.Length = 0 Then
                 MsgBox("有未完成的項目")
             ElseIf inp_pwd.Text.Length < 6 Then
@@ -63,6 +63,6 @@ Public Class SignupGUI
     End Sub
 
     Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
-        Module1.switchGUI(GUINAME.LoginGUI)
+        GUITool.switchGUI(GUINAME.LoginGUI)
     End Sub
 End Class
