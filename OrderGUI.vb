@@ -57,7 +57,12 @@
     Private Sub rdb_payment_CheckedChanged(sender As Object, e As EventArgs) Handles rdb_cash.CheckedChanged, rdb_MagicCard.CheckedChanged
         Dim rdb As RadioButton = sender
         GB_cash.Enabled = rdb_cash.Checked
-        countMoney()
+        Try
+            countMoney()
+        Catch ex As Exception
+
+        End Try
+
     End Sub
 
     Private Sub inp_checkNumberic(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles inp_paycash.KeyPress

@@ -2,6 +2,7 @@
     Dim main As MainGUI = New MainGUI()
     Dim login As LoginGUI = New LoginGUI()
     Dim order As OrderGUI = New OrderGUI()
+    Dim signup As SignupGUI = New SignupGUI()
     Dim username As String = ""
     Dim sex As String = "?"
     Dim movData(3) As String
@@ -10,6 +11,7 @@
         MainGUI = 0
         LoginGUI = 1
         OrderGUI = 2
+        SignupGUI = 3
     End Enum
 
     Public Sub setMovieData(ByVal name As String, ByVal time As String, ByVal place As String)
@@ -50,6 +52,7 @@
         main.Hide()
         login.Hide()
         order.Hide()
+        signup.Hide()
         Select Case guiname
             Case GUINAME.MainGUI
                 main.Show()
@@ -57,6 +60,8 @@
                 login.Show()
             Case GUINAME.OrderGUI
                 order.Show()
+            Case GUINAME.SignupGUI
+                signup.Show()
             Case Else
                 Throw New ApplicationException("GUI is invalid: " & guiname.ToString)
         End Select

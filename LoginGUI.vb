@@ -29,4 +29,12 @@ Public Class LoginGUI
     Private Sub LoginGUI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DB = DBTool.connectDB()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Module1.switchGUI(GUINAME.SignupGUI)
+    End Sub
+
+    Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
+        Module1.switchGUI(GUINAME.MainGUI)
+    End Sub
 End Class

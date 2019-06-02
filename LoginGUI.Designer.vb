@@ -29,6 +29,7 @@ Partial Class LoginGUI
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btn_cancel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -71,9 +72,9 @@ Partial Class LoginGUI
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Button1.Location = New System.Drawing.Point(73, 239)
+        Me.Button1.Location = New System.Drawing.Point(64, 228)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 36)
+        Me.Button1.Size = New System.Drawing.Size(232, 36)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "登入"
         Me.Button1.UseVisualStyleBackColor = True
@@ -81,9 +82,9 @@ Partial Class LoginGUI
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Button2.Location = New System.Drawing.Point(193, 239)
+        Me.Button2.Location = New System.Drawing.Point(64, 270)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(103, 36)
+        Me.Button2.Size = New System.Drawing.Size(114, 36)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "註冊"
         Me.Button2.UseVisualStyleBackColor = True
@@ -100,11 +101,22 @@ Partial Class LoginGUI
         Me.Label3.Text = "帳號或密碼錯誤"
         Me.Label3.Visible = False
         '
+        'btn_cancel
+        '
+        Me.btn_cancel.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_cancel.Location = New System.Drawing.Point(184, 270)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.Size = New System.Drawing.Size(114, 36)
+        Me.btn_cancel.TabIndex = 7
+        Me.btn_cancel.Text = "取消"
+        Me.btn_cancel.UseVisualStyleBackColor = True
+        '
         'LoginGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(375, 331)
+        Me.ClientSize = New System.Drawing.Size(375, 372)
+        Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -126,4 +138,5 @@ Partial Class LoginGUI
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents btn_cancel As Button
 End Class

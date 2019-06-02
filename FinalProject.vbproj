@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SignupGUI.Designer.vb">
+      <DependentUpon>SignupGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignupGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="OrderGUI.Designer.vb">
       <DependentUpon>OrderGUI.vb</DependentUpon>
     </Compile>
@@ -111,6 +117,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="SignupGUI.resx">
+      <DependentUpon>SignupGUI.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrderGUI.resx">
       <DependentUpon>OrderGUI.vb</DependentUpon>
     </EmbeddedResource>
