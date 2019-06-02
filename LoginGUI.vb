@@ -13,7 +13,7 @@ Public Class LoginGUI
         Dim drr As OleDbDataReader
         drr = objCmd.ExecuteReader
         Do While drr.Read()
-            UserData.setuser(drr.Item("username"), drr.Item("sex"))
+            UserData.setuser(inp_acc.Text, drr.Item("username"), drr.Item("sex"))
             success = True
         Loop
 

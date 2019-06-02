@@ -1,6 +1,7 @@
 ﻿Module UserData
 
     Dim username As String = ""
+    Dim account As String = ""
     Dim sex As String = "?"
     Dim movData(3) As String
     Dim ticketData(4) As Integer
@@ -49,13 +50,18 @@
         Return ticketData(ticketType)
     End Function
 
-    Public Sub setuser(ByVal name As String, ByVal usersex As String)
+    Public Sub setuser(ByVal acc As String, ByVal name As String, ByVal usersex As String)
+        account = acc
         username = name
         sex = usersex
     End Sub
 
     Public Function getUser()
         Return username
+    End Function
+
+    Public Function getAccount()
+        Return account
     End Function
 
     Public Function getUserPicture()
@@ -69,7 +75,7 @@
     End Function
 
     Public Sub logout()
-        setuser("", "?")
+        setuser("", "", "?")
     End Sub
 
 End Module

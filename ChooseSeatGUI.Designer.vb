@@ -34,6 +34,8 @@ Partial Class ChooseSeatGUI
         Me.lbl_name = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btn_submit = New System.Windows.Forms.Button()
+        Me.btn_back = New System.Windows.Forms.Button()
+        Me.btn_cancel = New System.Windows.Forms.Button()
         Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -160,11 +162,33 @@ Partial Class ChooseSeatGUI
         Me.btn_submit.Text = "完成訂票"
         Me.btn_submit.UseVisualStyleBackColor = True
         '
+        'btn_back
+        '
+        Me.btn_back.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_back.Location = New System.Drawing.Point(963, 547)
+        Me.btn_back.Name = "btn_back"
+        Me.btn_back.Size = New System.Drawing.Size(123, 35)
+        Me.btn_back.TabIndex = 7
+        Me.btn_back.Text = "修改張數"
+        Me.btn_back.UseVisualStyleBackColor = True
+        '
+        'btn_cancel
+        '
+        Me.btn_cancel.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_cancel.Location = New System.Drawing.Point(834, 547)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.Size = New System.Drawing.Size(123, 35)
+        Me.btn_cancel.TabIndex = 8
+        Me.btn_cancel.Text = "取消"
+        Me.btn_cancel.UseVisualStyleBackColor = True
+        '
         'ChooseSeatGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1252, 594)
+        Me.Controls.Add(Me.btn_cancel)
+        Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.btn_submit)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.GroupBox4)
@@ -189,4 +213,6 @@ Partial Class ChooseSeatGUI
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btn_submit As Button
+    Friend WithEvents btn_back As Button
+    Friend WithEvents btn_cancel As Button
 End Class
