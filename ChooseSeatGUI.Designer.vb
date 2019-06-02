@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ChooseSeatGUI
     Inherits System.Windows.Forms.Form
 
     'Form 覆寫 Dispose 以清除元件清單。
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class ChooseSeatGUI
     '注意: 以下為 Windows Form 設計工具所需的程序
     '可以使用 Windows Form 設計工具進行修改。
     '請勿使用程式碼編輯器進行修改。
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.lbl_chooesed = New System.Windows.Forms.Label()
@@ -33,6 +33,7 @@ Partial Class ChooseSeatGUI
         Me.lbl_time = New System.Windows.Forms.Label()
         Me.lbl_name = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btn_submit = New System.Windows.Forms.Button()
         Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,7 +51,7 @@ Partial Class ChooseSeatGUI
         Me.GroupBox4.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(39, 12)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(697, 148)
+        Me.GroupBox4.Size = New System.Drawing.Size(1176, 87)
         Me.GroupBox4.TabIndex = 4
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "電影資訊"
@@ -58,7 +59,7 @@ Partial Class ChooseSeatGUI
         'lbl_chooesed
         '
         Me.lbl_chooesed.AutoSize = True
-        Me.lbl_chooesed.Location = New System.Drawing.Point(611, 105)
+        Me.lbl_chooesed.Location = New System.Drawing.Point(1096, 43)
         Me.lbl_chooesed.Name = "lbl_chooesed"
         Me.lbl_chooesed.Size = New System.Drawing.Size(21, 24)
         Me.lbl_chooesed.TabIndex = 8
@@ -67,7 +68,7 @@ Partial Class ChooseSeatGUI
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(508, 105)
+        Me.Label3.Location = New System.Drawing.Point(993, 43)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(166, 24)
         Me.Label3.TabIndex = 7
@@ -76,7 +77,7 @@ Partial Class ChooseSeatGUI
         'lbl_waitChoose
         '
         Me.lbl_waitChoose.AutoSize = True
-        Me.lbl_waitChoose.Location = New System.Drawing.Point(123, 105)
+        Me.lbl_waitChoose.Location = New System.Drawing.Point(870, 43)
         Me.lbl_waitChoose.Name = "lbl_waitChoose"
         Me.lbl_waitChoose.Size = New System.Drawing.Size(21, 24)
         Me.lbl_waitChoose.TabIndex = 6
@@ -85,7 +86,7 @@ Partial Class ChooseSeatGUI
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(20, 105)
+        Me.Label1.Location = New System.Drawing.Point(767, 43)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(166, 24)
         Me.Label1.TabIndex = 5
@@ -94,7 +95,7 @@ Partial Class ChooseSeatGUI
         'lbl_place
         '
         Me.lbl_place.AutoSize = True
-        Me.lbl_place.Location = New System.Drawing.Point(608, 43)
+        Me.lbl_place.Location = New System.Drawing.Point(657, 43)
         Me.lbl_place.Name = "lbl_place"
         Me.lbl_place.Size = New System.Drawing.Size(26, 24)
         Me.lbl_place.TabIndex = 4
@@ -112,7 +113,7 @@ Partial Class ChooseSeatGUI
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(530, 43)
+        Me.Label14.Location = New System.Drawing.Point(579, 43)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(82, 24)
         Me.Label14.TabIndex = 2
@@ -142,18 +143,29 @@ Partial Class ChooseSeatGUI
         Me.TextBox1.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.TextBox1.Enabled = False
         Me.TextBox1.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(39, 176)
+        Me.TextBox1.Location = New System.Drawing.Point(39, 118)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(697, 36)
+        Me.TextBox1.Size = New System.Drawing.Size(1176, 36)
         Me.TextBox1.TabIndex = 5
         Me.TextBox1.Text = "螢幕"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btn_submit
+        '
+        Me.btn_submit.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_submit.Location = New System.Drawing.Point(1092, 547)
+        Me.btn_submit.Name = "btn_submit"
+        Me.btn_submit.Size = New System.Drawing.Size(123, 35)
+        Me.btn_submit.TabIndex = 6
+        Me.btn_submit.Text = "完成訂票"
+        Me.btn_submit.UseVisualStyleBackColor = True
         '
         'ChooseSeatGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 594)
+        Me.ClientSize = New System.Drawing.Size(1252, 594)
+        Me.Controls.Add(Me.btn_submit)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.GroupBox4)
         Me.Name = "ChooseSeatGUI"
@@ -176,4 +188,5 @@ Partial Class ChooseSeatGUI
     Friend WithEvents lbl_waitChoose As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btn_submit As Button
 End Class

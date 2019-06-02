@@ -183,11 +183,11 @@ Partial Class OrderGUI
         'btn_next
         '
         Me.btn_next.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.btn_next.Location = New System.Drawing.Point(717, 397)
+        Me.btn_next.Location = New System.Drawing.Point(716, 344)
         Me.btn_next.Name = "btn_next"
-        Me.btn_next.Size = New System.Drawing.Size(93, 38)
+        Me.btn_next.Size = New System.Drawing.Size(128, 38)
         Me.btn_next.TabIndex = 0
-        Me.btn_next.Text = "下一步"
+        Me.btn_next.Text = "開始選位"
         Me.btn_next.UseVisualStyleBackColor = True
         '
         'GroupBox2
@@ -447,9 +447,9 @@ Partial Class OrderGUI
         'btn_cancel
         '
         Me.btn_cancel.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.btn_cancel.Location = New System.Drawing.Point(716, 353)
+        Me.btn_cancel.Location = New System.Drawing.Point(716, 397)
         Me.btn_cancel.Name = "btn_cancel"
-        Me.btn_cancel.Size = New System.Drawing.Size(93, 38)
+        Me.btn_cancel.Size = New System.Drawing.Size(129, 38)
         Me.btn_cancel.TabIndex = 4
         Me.btn_cancel.Text = "取消"
         Me.btn_cancel.UseVisualStyleBackColor = True
@@ -458,7 +458,7 @@ Partial Class OrderGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(821, 460)
+        Me.ClientSize = New System.Drawing.Size(866, 460)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GB_cash)
