@@ -135,24 +135,18 @@ Public Class ChooseSeatGUI
         End If
         dr.Close()
 
-        SQLcmd = "Insert into seatdata(`orderid`,`seatx`,`seaty`) values"
         For y As Integer = 0 To 13
             For x As Integer = 0 To 24
                 If allLabel(y, x).BackColor = Color.Orange Then
-                    If isStart Then
-                        SQLcmd &= ","
-                    End If
+                    SQLcmd = "Insert into seatdata(`orderid`,`seatx`,`seaty`) values"
                     SQLcmd &= String.Format("({0},{1},{2})", serialID, x, y)
-                    isStart = True
+                    objCmd.CommandText = SQLcmd & " ;"
+                    objCmd.ExecuteNonQuery()
                 End If
             Next
         Next
-        objCmd.CommandText = SQLcmd & ";"
-        If isStart Then
-            objCmd.ExecuteNonQuery()
-            MsgBox("訂票成功")
-            GUITool.switchGUI(GUINAME.MainGUI)
-        End If
+        MsgBox("訂票成功")
+        GUITool.switchGUI(GUINAME.MainGUI)
     End Sub
 
 End Class

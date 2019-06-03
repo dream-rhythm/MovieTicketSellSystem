@@ -36,6 +36,9 @@ Partial Class ChooseSeatGUI
         Me.btn_submit = New System.Windows.Forms.Button()
         Me.btn_back = New System.Windows.Forms.Button()
         Me.btn_cancel = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -149,7 +152,7 @@ Partial Class ChooseSeatGUI
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(1176, 36)
         Me.TextBox1.TabIndex = 5
-        Me.TextBox1.Text = "螢幕"
+        Me.TextBox1.Text = "銀幕位置"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btn_submit
@@ -182,11 +185,47 @@ Partial Class ChooseSeatGUI
         Me.btn_cancel.Text = "取消"
         Me.btn_cancel.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.LightBlue
+        Me.Label2.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.Location = New System.Drawing.Point(53, 547)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(106, 24)
+        Me.Label2.TabIndex = 9
+        Me.Label2.Text = "尚有空位"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.OrangeRed
+        Me.Label4.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label4.Location = New System.Drawing.Point(283, 547)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(82, 24)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "已訂位"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Orange
+        Me.Label5.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label5.Location = New System.Drawing.Point(180, 547)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(82, 24)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "已選擇"
+        '
         'ChooseSeatGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1252, 594)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.btn_submit)
@@ -215,4 +254,7 @@ Partial Class ChooseSeatGUI
     Friend WithEvents btn_submit As Button
     Friend WithEvents btn_back As Button
     Friend WithEvents btn_cancel As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class
