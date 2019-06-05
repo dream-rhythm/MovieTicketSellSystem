@@ -73,9 +73,9 @@ Partial Class MainGUI
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(251, 40)
+        Me.Label1.Size = New System.Drawing.Size(273, 40)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "XX電影售票系統"
+        Me.Label1.Text = "逢甲電影售票系統"
         '
         'TextBox1
         '
