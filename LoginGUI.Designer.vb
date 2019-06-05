@@ -35,20 +35,22 @@ Partial Class LoginGUI
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label1.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Location = New System.Drawing.Point(69, 87)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 24)
+        Me.Label1.Size = New System.Drawing.Size(85, 30)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "帳號："
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label2.Location = New System.Drawing.Point(69, 148)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 24)
+        Me.Label2.Size = New System.Drawing.Size(85, 30)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "密碼："
         '
@@ -71,50 +73,54 @@ Partial Class LoginGUI
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button1.BackColor = System.Drawing.Color.Silver
+        Me.Button1.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Button1.Location = New System.Drawing.Point(64, 228)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(232, 36)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "登入"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button2.BackColor = System.Drawing.Color.Silver
+        Me.Button2.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Button2.Location = New System.Drawing.Point(64, 270)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(114, 36)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "註冊"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label3.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Red
         Me.Label3.Location = New System.Drawing.Point(102, 201)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(178, 24)
+        Me.Label3.Size = New System.Drawing.Size(185, 24)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "帳號或密碼錯誤"
         Me.Label3.Visible = False
         '
         'btn_cancel
         '
-        Me.btn_cancel.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_cancel.BackColor = System.Drawing.Color.Silver
+        Me.btn_cancel.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.btn_cancel.Location = New System.Drawing.Point(184, 270)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(114, 36)
         Me.btn_cancel.TabIndex = 7
         Me.btn_cancel.Text = "取消"
-        Me.btn_cancel.UseVisualStyleBackColor = True
+        Me.btn_cancel.UseVisualStyleBackColor = False
         '
         'LoginGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(375, 372)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.Label3)

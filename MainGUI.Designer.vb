@@ -68,12 +68,12 @@ Partial Class MainGUI
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Red
-        Me.Label1.Font = New System.Drawing.Font("新細明體", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label1.BackColor = System.Drawing.Color.Indigo
+        Me.Label1.Font = New System.Drawing.Font("微軟正黑體", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(251, 32)
+        Me.Label1.Size = New System.Drawing.Size(251, 40)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "XX電影售票系統"
         '
@@ -81,7 +81,7 @@ Partial Class MainGUI
         '
         Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.BackColor = System.Drawing.Color.Red
+        Me.TextBox1.BackColor = System.Drawing.Color.Black
         Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(0, 0)
         Me.TextBox1.Multiline = True
@@ -101,7 +101,7 @@ Partial Class MainGUI
         '
         Me.lbl_login.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_login.AutoSize = True
-        Me.lbl_login.BackColor = System.Drawing.Color.Red
+        Me.lbl_login.BackColor = System.Drawing.Color.Black
         Me.lbl_login.Font = New System.Drawing.Font("新細明體", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.lbl_login.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_login.Location = New System.Drawing.Point(1158, 13)
@@ -152,8 +152,9 @@ Partial Class MainGUI
         '
         'Label2
         '
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("新細明體", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.BackColor = System.Drawing.Color.Black
+        Me.Label2.Font = New System.Drawing.Font("微軟正黑體", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label2.Location = New System.Drawing.Point(251, 60)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(378, 266)
@@ -162,9 +163,10 @@ Partial Class MainGUI
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button1.Location = New System.Drawing.Point(257, 178)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(106, 44)
@@ -175,9 +177,10 @@ Partial Class MainGUI
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button2.Location = New System.Drawing.Point(381, 178)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(106, 44)
@@ -188,9 +191,10 @@ Partial Class MainGUI
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button3.Location = New System.Drawing.Point(506, 178)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(106, 44)
@@ -202,8 +206,9 @@ Partial Class MainGUI
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label3.Location = New System.Drawing.Point(257, 114)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(187, 24)
@@ -213,8 +218,9 @@ Partial Class MainGUI
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label4.Location = New System.Drawing.Point(913, 114)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(187, 24)
@@ -223,8 +229,9 @@ Partial Class MainGUI
         '
         'Label5
         '
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("新細明體", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label5.BackColor = System.Drawing.Color.Black
+        Me.Label5.Font = New System.Drawing.Font("微軟正黑體", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label5.Location = New System.Drawing.Point(907, 60)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(378, 266)
@@ -233,9 +240,10 @@ Partial Class MainGUI
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button6.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button6.Location = New System.Drawing.Point(913, 178)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(106, 44)
@@ -246,9 +254,10 @@ Partial Class MainGUI
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button5.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button5.Location = New System.Drawing.Point(1037, 178)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(106, 44)
@@ -259,9 +268,10 @@ Partial Class MainGUI
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button4.Location = New System.Drawing.Point(1162, 178)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(106, 44)
@@ -272,9 +282,10 @@ Partial Class MainGUI
         '
         'Button7
         '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button7.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button7.Location = New System.Drawing.Point(1162, 228)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(106, 44)
@@ -285,9 +296,10 @@ Partial Class MainGUI
         '
         'Button8
         '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button8.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button8.Location = New System.Drawing.Point(1037, 228)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(106, 44)
@@ -298,9 +310,10 @@ Partial Class MainGUI
         '
         'Button9
         '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button9.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button9.Location = New System.Drawing.Point(913, 228)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(106, 44)
@@ -311,9 +324,10 @@ Partial Class MainGUI
         '
         'Button10
         '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button10.FlatAppearance.BorderSize = 0
         Me.Button10.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button10.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button10.Location = New System.Drawing.Point(1162, 278)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(106, 44)
@@ -324,9 +338,10 @@ Partial Class MainGUI
         '
         'Button11
         '
-        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button11.FlatAppearance.BorderSize = 0
         Me.Button11.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button11.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button11.Location = New System.Drawing.Point(1037, 278)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(106, 44)
@@ -337,9 +352,10 @@ Partial Class MainGUI
         '
         'Button12
         '
-        Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button12.FlatAppearance.BorderSize = 0
         Me.Button12.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button12.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button12.Location = New System.Drawing.Point(913, 278)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(106, 44)
@@ -351,8 +367,9 @@ Partial Class MainGUI
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label6.Location = New System.Drawing.Point(257, 409)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(187, 24)
@@ -361,9 +378,10 @@ Partial Class MainGUI
         '
         'Button13
         '
-        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button13.FlatAppearance.BorderSize = 0
         Me.Button13.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button13.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button13.Location = New System.Drawing.Point(506, 473)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(106, 44)
@@ -374,9 +392,10 @@ Partial Class MainGUI
         '
         'Button14
         '
-        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button14.FlatAppearance.BorderSize = 0
         Me.Button14.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button14.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button14.Location = New System.Drawing.Point(381, 473)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(106, 44)
@@ -387,9 +406,10 @@ Partial Class MainGUI
         '
         'Button15
         '
-        Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button15.FlatAppearance.BorderSize = 0
         Me.Button15.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button15.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button15.Location = New System.Drawing.Point(257, 473)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(106, 44)
@@ -400,8 +420,9 @@ Partial Class MainGUI
         '
         'Label7
         '
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("新細明體", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label7.BackColor = System.Drawing.Color.Black
+        Me.Label7.Font = New System.Drawing.Font("微軟正黑體", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label7.Location = New System.Drawing.Point(251, 355)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(378, 266)
@@ -410,9 +431,10 @@ Partial Class MainGUI
         '
         'Button16
         '
-        Me.Button16.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button16.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button16.FlatAppearance.BorderSize = 0
         Me.Button16.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button16.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button16.Location = New System.Drawing.Point(257, 523)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(106, 44)
@@ -423,9 +445,10 @@ Partial Class MainGUI
         '
         'Button17
         '
-        Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button17.FlatAppearance.BorderSize = 0
         Me.Button17.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button17.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button17.Location = New System.Drawing.Point(913, 523)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(106, 44)
@@ -437,8 +460,9 @@ Partial Class MainGUI
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label8.Location = New System.Drawing.Point(913, 409)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(187, 24)
@@ -447,9 +471,10 @@ Partial Class MainGUI
         '
         'Button18
         '
-        Me.Button18.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button18.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button18.FlatAppearance.BorderSize = 0
         Me.Button18.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button18.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button18.Location = New System.Drawing.Point(1162, 473)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(106, 44)
@@ -460,9 +485,10 @@ Partial Class MainGUI
         '
         'Button19
         '
-        Me.Button19.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button19.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button19.FlatAppearance.BorderSize = 0
         Me.Button19.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button19.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button19.Location = New System.Drawing.Point(1037, 473)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(106, 44)
@@ -473,9 +499,10 @@ Partial Class MainGUI
         '
         'Button20
         '
-        Me.Button20.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button20.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button20.FlatAppearance.BorderSize = 0
         Me.Button20.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button20.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button20.Location = New System.Drawing.Point(913, 473)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(106, 44)
@@ -486,8 +513,9 @@ Partial Class MainGUI
         '
         'Label9
         '
-        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label9.Font = New System.Drawing.Font("新細明體", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label9.BackColor = System.Drawing.Color.Black
+        Me.Label9.Font = New System.Drawing.Font("微軟正黑體", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label9.Location = New System.Drawing.Point(907, 355)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(378, 266)
@@ -498,6 +526,7 @@ Partial Class MainGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1350, 783)
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Label8)

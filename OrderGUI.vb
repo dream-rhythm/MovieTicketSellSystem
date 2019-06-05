@@ -89,4 +89,16 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
         GUITool.switchGUI(GUINAME.MainGUI)
     End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub GB_cash_Enter(sender As Object, e As EventArgs) Handles GB_cash.Enter
+
+    End Sub
 End Class

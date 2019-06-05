@@ -39,55 +39,61 @@ Partial Class SignupGUI
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label1.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Location = New System.Drawing.Point(83, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 24)
+        Me.Label1.Size = New System.Drawing.Size(85, 30)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "帳號："
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label2.Location = New System.Drawing.Point(83, 99)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 24)
+        Me.Label2.Size = New System.Drawing.Size(85, 30)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "密碼："
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label3.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label3.Location = New System.Drawing.Point(35, 144)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(130, 24)
+        Me.Label3.Size = New System.Drawing.Size(133, 30)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "重複密碼："
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label4.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label4.Location = New System.Drawing.Point(83, 189)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(82, 24)
+        Me.Label4.Size = New System.Drawing.Size(85, 30)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "姓名："
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label5.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label5.Location = New System.Drawing.Point(83, 234)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(82, 24)
+        Me.Label5.Size = New System.Drawing.Size(85, 30)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "性別："
         '
         'inp_acc
         '
+        Me.inp_acc.BackColor = System.Drawing.Color.Gray
         Me.inp_acc.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.inp_acc.Location = New System.Drawing.Point(171, 42)
         Me.inp_acc.Name = "inp_acc"
@@ -96,6 +102,7 @@ Partial Class SignupGUI
         '
         'inp_pwd
         '
+        Me.inp_pwd.BackColor = System.Drawing.Color.Gray
         Me.inp_pwd.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.inp_pwd.Location = New System.Drawing.Point(171, 89)
         Me.inp_pwd.Name = "inp_pwd"
@@ -104,6 +111,7 @@ Partial Class SignupGUI
         '
         'inp_pwd2
         '
+        Me.inp_pwd2.BackColor = System.Drawing.Color.Gray
         Me.inp_pwd2.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.inp_pwd2.Location = New System.Drawing.Point(171, 136)
         Me.inp_pwd2.Name = "inp_pwd2"
@@ -112,6 +120,7 @@ Partial Class SignupGUI
         '
         'inp_name
         '
+        Me.inp_name.BackColor = System.Drawing.Color.Gray
         Me.inp_name.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.inp_name.Location = New System.Drawing.Point(171, 183)
         Me.inp_name.Name = "inp_name"
@@ -120,6 +129,7 @@ Partial Class SignupGUI
         '
         'cbb_sex
         '
+        Me.cbb_sex.BackColor = System.Drawing.Color.Gray
         Me.cbb_sex.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.cbb_sex.FormattingEnabled = True
         Me.cbb_sex.Location = New System.Drawing.Point(171, 230)
@@ -151,6 +161,7 @@ Partial Class SignupGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(436, 357)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.btn_submit)

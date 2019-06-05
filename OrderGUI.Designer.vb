@@ -82,7 +82,8 @@ Partial Class OrderGUI
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.NumericUpDown1)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.GroupBox1.Location = New System.Drawing.Point(14, 112)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(303, 323)
@@ -95,7 +96,7 @@ Partial Class OrderGUI
         Me.lbl_total.AutoSize = True
         Me.lbl_total.Location = New System.Drawing.Point(177, 276)
         Me.lbl_total.Name = "lbl_total"
-        Me.lbl_total.Size = New System.Drawing.Size(21, 24)
+        Me.lbl_total.Size = New System.Drawing.Size(27, 30)
         Me.lbl_total.TabIndex = 9
         Me.lbl_total.Text = "0"
         '
@@ -104,7 +105,7 @@ Partial Class OrderGUI
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(56, 276)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 24)
+        Me.Label5.Size = New System.Drawing.Size(109, 30)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "總金額："
         '
@@ -113,16 +114,17 @@ Partial Class OrderGUI
         Me.NumericUpDown4.Location = New System.Drawing.Point(177, 217)
         Me.NumericUpDown4.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(120, 36)
+        Me.NumericUpDown4.Size = New System.Drawing.Size(120, 39)
         Me.NumericUpDown4.TabIndex = 7
         Me.NumericUpDown4.Tag = "150"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 219)
+        Me.Label4.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label4.Location = New System.Drawing.Point(33, 224)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(155, 24)
+        Me.Label4.Size = New System.Drawing.Size(131, 24)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "敬老票(150)："
         '
@@ -131,16 +133,17 @@ Partial Class OrderGUI
         Me.NumericUpDown3.Location = New System.Drawing.Point(177, 157)
         Me.NumericUpDown3.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(120, 36)
+        Me.NumericUpDown3.Size = New System.Drawing.Size(120, 39)
         Me.NumericUpDown3.TabIndex = 5
         Me.NumericUpDown3.Tag = "150"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 159)
+        Me.Label3.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label3.Location = New System.Drawing.Point(33, 164)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(155, 24)
+        Me.Label3.Size = New System.Drawing.Size(131, 24)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "孩童票(150)："
         '
@@ -149,16 +152,17 @@ Partial Class OrderGUI
         Me.NumericUpDown2.Location = New System.Drawing.Point(177, 97)
         Me.NumericUpDown2.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(120, 36)
+        Me.NumericUpDown2.Size = New System.Drawing.Size(120, 39)
         Me.NumericUpDown2.TabIndex = 3
         Me.NumericUpDown2.Tag = "200"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 99)
+        Me.Label2.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.Location = New System.Drawing.Point(33, 104)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(155, 24)
+        Me.Label2.Size = New System.Drawing.Size(131, 24)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "學生票(200)："
         '
@@ -167,34 +171,38 @@ Partial Class OrderGUI
         Me.NumericUpDown1.Location = New System.Drawing.Point(177, 37)
         Me.NumericUpDown1.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 36)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 39)
         Me.NumericUpDown1.TabIndex = 1
         Me.NumericUpDown1.Tag = "230"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 39)
+        Me.Label1.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label1.Location = New System.Drawing.Point(33, 44)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(155, 24)
+        Me.Label1.Size = New System.Drawing.Size(132, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "    全票(230)："
         '
         'btn_next
         '
-        Me.btn_next.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_next.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_next.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_next.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btn_next.Location = New System.Drawing.Point(716, 344)
         Me.btn_next.Name = "btn_next"
         Me.btn_next.Size = New System.Drawing.Size(128, 38)
         Me.btn_next.TabIndex = 0
         Me.btn_next.Text = "開始選位"
-        Me.btn_next.UseVisualStyleBackColor = True
+        Me.btn_next.UseVisualStyleBackColor = False
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.rdb_MagicCard)
         Me.GroupBox2.Controls.Add(Me.rdb_cash)
-        Me.GroupBox2.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.GroupBox2.Location = New System.Drawing.Point(346, 112)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(365, 126)
@@ -205,9 +213,10 @@ Partial Class OrderGUI
         'rdb_MagicCard
         '
         Me.rdb_MagicCard.AutoSize = True
+        Me.rdb_MagicCard.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.rdb_MagicCard.Location = New System.Drawing.Point(28, 82)
         Me.rdb_MagicCard.Name = "rdb_MagicCard"
-        Me.rdb_MagicCard.Size = New System.Drawing.Size(100, 28)
+        Me.rdb_MagicCard.Size = New System.Drawing.Size(85, 28)
         Me.rdb_MagicCard.TabIndex = 1
         Me.rdb_MagicCard.Text = "信用卡"
         Me.rdb_MagicCard.UseVisualStyleBackColor = True
@@ -216,9 +225,10 @@ Partial Class OrderGUI
         '
         Me.rdb_cash.AutoSize = True
         Me.rdb_cash.Checked = True
+        Me.rdb_cash.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.rdb_cash.Location = New System.Drawing.Point(28, 39)
         Me.rdb_cash.Name = "rdb_cash"
-        Me.rdb_cash.Size = New System.Drawing.Size(124, 28)
+        Me.rdb_cash.Size = New System.Drawing.Size(104, 28)
         Me.rdb_cash.TabIndex = 0
         Me.rdb_cash.TabStop = True
         Me.rdb_cash.Text = "現金交易"
@@ -241,7 +251,8 @@ Partial Class OrderGUI
         Me.GB_cash.Controls.Add(Me.Label7)
         Me.GB_cash.Controls.Add(Me.inp_paycash)
         Me.GB_cash.Controls.Add(Me.Label6)
-        Me.GB_cash.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.GB_cash.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.GB_cash.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.GB_cash.Location = New System.Drawing.Point(346, 244)
         Me.GB_cash.Name = "GB_cash"
         Me.GB_cash.Size = New System.Drawing.Size(365, 191)
@@ -254,7 +265,7 @@ Partial Class OrderGUI
         Me.lbl_1.AutoSize = True
         Me.lbl_1.Location = New System.Drawing.Point(325, 144)
         Me.lbl_1.Name = "lbl_1"
-        Me.lbl_1.Size = New System.Drawing.Size(21, 24)
+        Me.lbl_1.Size = New System.Drawing.Size(27, 30)
         Me.lbl_1.TabIndex = 14
         Me.lbl_1.Text = "0"
         '
@@ -263,7 +274,7 @@ Partial Class OrderGUI
         Me.lbl_5.AutoSize = True
         Me.lbl_5.Location = New System.Drawing.Point(276, 144)
         Me.lbl_5.Name = "lbl_5"
-        Me.lbl_5.Size = New System.Drawing.Size(21, 24)
+        Me.lbl_5.Size = New System.Drawing.Size(27, 30)
         Me.lbl_5.TabIndex = 13
         Me.lbl_5.Text = "0"
         '
@@ -272,7 +283,7 @@ Partial Class OrderGUI
         Me.lbl_10.AutoSize = True
         Me.lbl_10.Location = New System.Drawing.Point(231, 144)
         Me.lbl_10.Name = "lbl_10"
-        Me.lbl_10.Size = New System.Drawing.Size(21, 24)
+        Me.lbl_10.Size = New System.Drawing.Size(27, 30)
         Me.lbl_10.TabIndex = 12
         Me.lbl_10.Text = "0"
         '
@@ -281,7 +292,7 @@ Partial Class OrderGUI
         Me.lbl_50.AutoSize = True
         Me.lbl_50.Location = New System.Drawing.Point(173, 144)
         Me.lbl_50.Name = "lbl_50"
-        Me.lbl_50.Size = New System.Drawing.Size(21, 24)
+        Me.lbl_50.Size = New System.Drawing.Size(27, 30)
         Me.lbl_50.TabIndex = 11
         Me.lbl_50.Text = "0"
         '
@@ -290,7 +301,7 @@ Partial Class OrderGUI
         Me.lbl_100.AutoSize = True
         Me.lbl_100.Location = New System.Drawing.Point(107, 144)
         Me.lbl_100.Name = "lbl_100"
-        Me.lbl_100.Size = New System.Drawing.Size(21, 24)
+        Me.lbl_100.Size = New System.Drawing.Size(27, 30)
         Me.lbl_100.TabIndex = 10
         Me.lbl_100.Text = "0"
         '
@@ -299,7 +310,7 @@ Partial Class OrderGUI
         Me.lbl_500.AutoSize = True
         Me.lbl_500.Location = New System.Drawing.Point(33, 144)
         Me.lbl_500.Name = "lbl_500"
-        Me.lbl_500.Size = New System.Drawing.Size(21, 24)
+        Me.lbl_500.Size = New System.Drawing.Size(27, 30)
         Me.lbl_500.TabIndex = 9
         Me.lbl_500.Text = "0"
         '
@@ -308,7 +319,7 @@ Partial Class OrderGUI
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(325, 114)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(21, 24)
+        Me.Label13.Size = New System.Drawing.Size(27, 30)
         Me.Label13.TabIndex = 8
         Me.Label13.Text = "1"
         '
@@ -317,7 +328,7 @@ Partial Class OrderGUI
         Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(278, 114)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(21, 24)
+        Me.Label12.Size = New System.Drawing.Size(27, 30)
         Me.Label12.TabIndex = 7
         Me.Label12.Text = "5"
         '
@@ -326,7 +337,7 @@ Partial Class OrderGUI
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(220, 114)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(32, 24)
+        Me.Label11.Size = New System.Drawing.Size(41, 30)
         Me.Label11.TabIndex = 6
         Me.Label11.Text = "10"
         '
@@ -335,7 +346,7 @@ Partial Class OrderGUI
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(162, 114)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(32, 24)
+        Me.Label10.Size = New System.Drawing.Size(41, 30)
         Me.Label10.TabIndex = 5
         Me.Label10.Text = "50"
         '
@@ -344,7 +355,7 @@ Partial Class OrderGUI
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(93, 114)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(43, 24)
+        Me.Label9.Size = New System.Drawing.Size(55, 30)
         Me.Label9.TabIndex = 4
         Me.Label9.Text = "100"
         '
@@ -353,16 +364,17 @@ Partial Class OrderGUI
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(24, 114)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(43, 24)
+        Me.Label8.Size = New System.Drawing.Size(55, 30)
         Me.Label8.TabIndex = 3
         Me.Label8.Text = "500"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(17, 78)
+        Me.Label7.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label7.Location = New System.Drawing.Point(25, 82)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(82, 24)
+        Me.Label7.Size = New System.Drawing.Size(67, 24)
         Me.Label7.TabIndex = 2
         Me.Label7.Text = "找零："
         '
@@ -371,16 +383,17 @@ Partial Class OrderGUI
         Me.inp_paycash.Location = New System.Drawing.Point(105, 33)
         Me.inp_paycash.MaxLength = 5
         Me.inp_paycash.Name = "inp_paycash"
-        Me.inp_paycash.Size = New System.Drawing.Size(140, 36)
+        Me.inp_paycash.Size = New System.Drawing.Size(140, 39)
         Me.inp_paycash.TabIndex = 1
         Me.inp_paycash.Text = "0"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(17, 36)
+        Me.Label6.Font = New System.Drawing.Font("微軟正黑體", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label6.Location = New System.Drawing.Point(25, 40)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(82, 24)
+        Me.Label6.Size = New System.Drawing.Size(67, 24)
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "付款："
         '
@@ -391,7 +404,8 @@ Partial Class OrderGUI
         Me.GroupBox4.Controls.Add(Me.Label14)
         Me.GroupBox4.Controls.Add(Me.lbl_time)
         Me.GroupBox4.Controls.Add(Me.lbl_name)
-        Me.GroupBox4.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.GroupBox4.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.GroupBox4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.GroupBox4.Location = New System.Drawing.Point(14, 13)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(697, 93)
@@ -404,60 +418,70 @@ Partial Class OrderGUI
         Me.lbl_place.AutoSize = True
         Me.lbl_place.Location = New System.Drawing.Point(608, 43)
         Me.lbl_place.Name = "lbl_place"
-        Me.lbl_place.Size = New System.Drawing.Size(26, 24)
+        Me.lbl_place.Size = New System.Drawing.Size(30, 30)
         Me.lbl_place.TabIndex = 4
         Me.lbl_place.Text = "A"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label15.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label15.Location = New System.Drawing.Point(328, 43)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(82, 24)
+        Me.Label15.Size = New System.Drawing.Size(85, 30)
         Me.Label15.TabIndex = 3
         Me.Label15.Text = "時間："
         '
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label14.Location = New System.Drawing.Point(530, 43)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(82, 24)
+        Me.Label14.Size = New System.Drawing.Size(85, 30)
         Me.Label14.TabIndex = 2
         Me.Label14.Text = "影廳："
         '
         'lbl_time
         '
         Me.lbl_time.AutoSize = True
+        Me.lbl_time.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.lbl_time.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.lbl_time.Location = New System.Drawing.Point(416, 43)
         Me.lbl_time.Name = "lbl_time"
-        Me.lbl_time.Size = New System.Drawing.Size(60, 24)
+        Me.lbl_time.Size = New System.Drawing.Size(75, 30)
         Me.lbl_time.TabIndex = 1
         Me.lbl_time.Text = "00:00"
         '
         'lbl_name
         '
         Me.lbl_name.AutoSize = True
+        Me.lbl_name.Font = New System.Drawing.Font("微軟正黑體", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.lbl_name.Location = New System.Drawing.Point(20, 43)
         Me.lbl_name.Name = "lbl_name"
-        Me.lbl_name.Size = New System.Drawing.Size(130, 24)
+        Me.lbl_name.Size = New System.Drawing.Size(134, 31)
         Me.lbl_name.TabIndex = 0
         Me.lbl_name.Text = "今晚打老虎"
         '
         'btn_cancel
         '
-        Me.btn_cancel.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_cancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_cancel.Font = New System.Drawing.Font("微軟正黑體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.btn_cancel.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btn_cancel.Location = New System.Drawing.Point(716, 397)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(129, 38)
         Me.btn_cancel.TabIndex = 4
         Me.btn_cancel.Text = "取消"
-        Me.btn_cancel.UseVisualStyleBackColor = True
+        Me.btn_cancel.UseVisualStyleBackColor = False
         '
         'OrderGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ClientSize = New System.Drawing.Size(866, 460)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.GroupBox4)
