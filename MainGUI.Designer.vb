@@ -527,7 +527,7 @@ Partial Class MainGUI
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1350, 783)
+        Me.ClientSize = New System.Drawing.Size(1350, 749)
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button18)
@@ -565,7 +565,7 @@ Partial Class MainGUI
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "MainGUI"
-        Me.Text = "Form1"
+        Me.Text = "逢甲電影售票系統"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()

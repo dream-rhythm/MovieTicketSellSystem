@@ -22,7 +22,14 @@
 
     Private Sub countMoney()
         Dim needToPay As Integer = lbl_total.Text
-        Dim payCash As Integer = inp_paycash.Text
+        Dim payCash As Integer
+        Try
+            payCash = inp_paycash.Text
+        Catch ex As Exception
+            payCash = 0
+        End Try
+
+
 
         If rdb_cash.Checked Then
             If payCash > needToPay Then
@@ -63,8 +70,13 @@
 
     Private Sub inp_checkNumberic(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles inp_paycash.KeyPress
         '48 - 57  = Ascii codes for numbers
-        If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
-            e.Handled = True
+        If (Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57) And Asc(e.KeyChar) <> 8 Then
+            If inp_paycash.Text.Length = 1 Then
+                inp_paycash.Text = "0"
+            Else
+                e.Handled = True
+            End If
+
         End If
     End Sub
 
@@ -90,15 +102,4 @@
         GUITool.switchGUI(GUINAME.MainGUI)
     End Sub
 
-    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
-
-    End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
-    Private Sub GB_cash_Enter(sender As Object, e As EventArgs) Handles GB_cash.Enter
-
-    End Sub
 End Class

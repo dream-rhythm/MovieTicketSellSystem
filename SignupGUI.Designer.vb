@@ -106,6 +106,7 @@ Partial Class SignupGUI
         Me.inp_pwd.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.inp_pwd.Location = New System.Drawing.Point(171, 89)
         Me.inp_pwd.Name = "inp_pwd"
+        Me.inp_pwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.inp_pwd.Size = New System.Drawing.Size(177, 36)
         Me.inp_pwd.TabIndex = 6
         '
@@ -115,6 +116,7 @@ Partial Class SignupGUI
         Me.inp_pwd2.Font = New System.Drawing.Font("新細明體", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.inp_pwd2.Location = New System.Drawing.Point(171, 136)
         Me.inp_pwd2.Name = "inp_pwd2"
+        Me.inp_pwd2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.inp_pwd2.Size = New System.Drawing.Size(177, 36)
         Me.inp_pwd2.TabIndex = 7
         '

@@ -131,7 +131,7 @@ Partial Class LoginGUI
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "LoginGUI"
-        Me.Text = "Form1"
+        Me.Text = "登入"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
